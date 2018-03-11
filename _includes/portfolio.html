@@ -1,0 +1,31 @@
+
+
+
+<article>
+<section class="portfolio">
+
+    <div class="container-fluid grid js-masonry"  >
+        {% for item in site.portfolio %}
+        <div class="grid-item panel" style="margin-bottom: 20px;
+  float: left;
+  width:200px;">
+            <a href="{{ site.baseurl }}{{ item.url }}" class="portfolio-link" data-keyboard="true">
+            
+                <img src="{{ site.baseurl }}/{{ item.img }}" class="img-responsive" alt="portfolio" style="max-width:100%;">
+            </a>
+
+            <script>
+$('.grid').imagesLoaded(function() {
+$('.grid').masonry({
+itemSelector: 'grid.item',
+columnWidth: 220
+});
+});
+</script>
+
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+</article>

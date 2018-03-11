@@ -1,34 +1,63 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+baseurl: ""
+url: "https://alex2017net.github.io"
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+theme_settings:
+  title: ALEX
+  email_address: alex_2017@foxmail.com
+  description: 
+    To tell a story
 
-# Build settings
+  #twitter_username: jekyllrb
+  github_username:  alex_2017@git.zzz
+  avatar: assets/img/triangle.svg
+  favicon: assets/favicon.ico
+  behance:  
+  github: Alex2017net
+  instagram:  
+  linkedin:  
+
+
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
+
+#page
+paginate: 5
+paginate_path: "blog/page:num"
+
+
+ # Localization strings
+str_follow_on: "Follow on"
+str_rss_follow: "Follow RSS feed"
+str_email: "Email"
+str_next_post: "Next post"
+str_previous_post: "Previous post"
+str_next_page: "Next"
+str_previous_page: "Prev"
+str_continue_reading: "Continue reading"
+str_javascript_required_disqus: "Please enable JavaScript to view comments."
+
+# Header and footer text
+header_text:  #two or three lines to describe your site
+     To Tell a Story 
+header_text_feature_image: assets/img/pexels/triangular.jpeg
+footer_text: 
+   Powered by Jekyll with Bootstrap.
+intro_text:
+  I'm a designer.
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+
+
+
+excerpt_separator:  '<!-- more -->'
+
+home_slogan: to tell a story

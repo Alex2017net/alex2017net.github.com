@@ -1,0 +1,28 @@
+<div id="post-nav">
+
+<nav aria-label="...">
+  <ul class="pager">
+  {% if page.previous.url %}
+
+  <li id="previous-post" class="post-nav-post previous">
+
+      <p>{{ site.theme_settings.str_previous_post }}</p>
+      <a href="{{ site.baseurl }}{{ page.previous.url }}">
+        <span aria-hidden="true">&larr;</span>{{ page.previous.title }}
+      </a>
+  </li>
+  {% endif %}
+  {% if page.next.url %}
+  <li id="next-post" class="post-nav-post next">
+      <p>{{ site.theme_settings.str_next_post }}</p>
+      <a href="{{ site.baseurl }}{{ page.next.url }}">
+        {{ page.next.title }}<span aria-hidden="true">&rarr;</span>
+      </a>
+
+  </li>
+
+  {% endif %}
+  </ul>
+</nav>
+
+</div>

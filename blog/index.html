@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+
+
+<div class="container" style=" padding-top: 100px; ">
+	<div class="row" >
+   
+  
+
+		<div class="col-md-2">
+
+    <!--  <div class="page-header">
+         <h1>Catagory</h1>
+       </div>
+
+		   {% include category.html %}	-->
+		</div>
+
+
+		<div class="col-md-8">
+
+       <div class="page-header">
+         <h1>Blog <small>All</small></h1>
+       </div>
+
+
+
+
+
+      {% for post in paginator.posts %}
+
+   <div class="panel panel-default">
+ <div class="panel-body">
+    <!-- <a class="thumbnail blog1" >
+
+        {% if post.img %}
+
+       <img src="{{ site.baseurl }}/{{ post.img }}" class="img-fluid" alt="">
+       {% else %}
+       <div style="background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);width:600px;height:600px;"></div>
+       {% endif %}
+
+    </a> -->
+  
+    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{post.title}} <small>{{post.categories}}</small>
+  </a></h2>
+    <h5>{{ post.date | date: "%B %-d, %Y"  }}</h5>
+    <h6>{{ post.excerpt }}</h6>
+    
+  	</div>
+  </div>
+  
+    {% endfor %}
+
+  
+
+    
+   
+
+
+{% include paginator.html %}
+
+<div class="col-md-2"></div>
+
+</div> 
+</div>
+</div>
+
+
+

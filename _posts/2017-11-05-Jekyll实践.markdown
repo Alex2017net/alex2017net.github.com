@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Jekyll实践——搭建我的blog"
+date:   2017-11-05 16:00:00 +0800
+categories: 编程
+img: "assets/img/post/20171224.jpg"
+---
+
+因为想尝试完成一个小项目，在网上查找时偶然发现jekyll这一神器。使用Jekyll可以在GitHub Pages上轻松搭建静态网站。
+
+<!-- more -->
+
+## Jekyll基础知识：
+
+
+## GitHub Pages如何配置：
+
+
+## Jekyll Themes——选用模板轻松搭建
+
+
+## 实践自己的想法
+
+
+
+## 注意细节
+**liquid语言**
+
+

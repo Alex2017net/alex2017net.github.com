@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="container" style=" padding-top: 70px; ">
+	<div class="row">
+		<div class="col-md-2"></div>
+
+		<div class="col-md-8" style="overflow:hidden;">
+           
+
+    <article>
+
+  <header id="main" >
+    <h1 id="{{ page.title | default: "" | cgi_escape }}" class="title">
+        {{ page.title }}
+    </h1>
+    
+    {% if page.subtitle %}
+    <h2 class="subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+    <h4>{{ page.date | date: "%B %-d, %Y" }}</h4>
+    {% if page.author %} <h4>{{ page.author }} </h4> {% endif %}
+      
+  </header>
+  {% if page.img %}
+  <img src="{{ site.baseurl }}/{{ page.img }}" class="img-responsive" alt="">
+  {% endif %}
+  <section class="post-content">{{ content }}</section>
+   
+</article>
+
+{% include post_nav.html %}
+
+</div>
+<div class="col-md-2"></div>
+
+</div>
+
+</div>
+
+
+
