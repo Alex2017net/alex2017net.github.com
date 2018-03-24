@@ -5,10 +5,11 @@
     
 	
     
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#00000000; border-style:none;">
-        <div class="container">
+    <nav class="navbar navbar-fixed-top my-navbar" role="navigation" style="border-style:none;">
+        <div class="container-fluid">
 
         <div class="navbar-header">
+          
             <div class="container-fluid">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                 data-target="#example-navbar-collapse">
@@ -22,8 +23,26 @@
             <img class="avatar" src="{{ site.baseurl }}/{{ site.theme_settings.avatar }}" alt="avatar"/>
             </a> -->
 
+        <a class="navbar-brand" href="#" style="width:50px;margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;font-size:22px;padding-top:10px">
         
-            <a class="navbar-brand" href="{{ site.baseurl }}/" >
+
+<svg width="50%" height="100%" viewBox="0 0 108 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-869.000000, -1238.000000)">
+            <polygon id="Triangle-6" fill="#000000" points="923 1238 977 1362 869 1362"></polygon>
+            <polygon id="Triangle-7" fill="#FFFFFF" points="929.654999 1272.36867 966.309998 1359 893 1359"></polygon>
+            <polygon id="Triangle-8" fill="#000000" points="926.598546 1289.03876 942.602022 1328 910.595069 1328"></polygon>
+        </g>
+    </g>
+</svg>
+      </a>
+            <a class="navbar-brand" href="{{ site.baseurl }}/" style="padding-left:0px;margin-left: -15px;">
             	{{ site.theme_settings.title }}
             </a>
         
@@ -58,6 +77,11 @@
  </div>
         
 	</nav>
+	 <script>  
+        $(window).scroll(function () {  
+            if ($(".navbar").offset().top > 50) {$(".navbar-fixed-top").addClass("top-nav");  
+            }else {$(".navbar-fixed-top").removeClass("top-nav");}  
+        })</script>
 </header>
 </div>
 </div>
